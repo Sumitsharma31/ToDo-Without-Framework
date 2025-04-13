@@ -163,12 +163,15 @@ setInterval(
 //for get dat data
 let now = new Date();
 let day = now.getDate();
-let month = now.getDay();
+let month = now.getMonth() + 1;
+
 let year = now.getFullYear()
 
 // console.log(amPm());
 
 function dateFun() {
+    console.log(month);
+    
     dayId.innerText = `${fixDigits(day)}`;
     monthId.innerText = `${fixDigits(month)}`;
     yearId.innerText = year;
