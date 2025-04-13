@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="darkMode">
+    <div class="header">
+        <div class="time">
+            <p><span id="hour"></span> : <span id="min"></span> <span id="isAm"></span></p>
+            <p><span id="day"></span> : <span id="month"></span> : <span id="year"></span></p>
+        </div>
+        <div class="themMode">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+    </div>
+    <div class="container">
+        <h1>TODO_LIST</h1>
+       <div class="wrapper ">
+        <input type="text" id="inputData" placeholder="Enter your Text">
+        <button  onclick="" id="addBtn">
+            <img id="btnLogo" src="/toDoList/sources/file-create-svgrepo-com.svg" width="25px" alt="">
+            
+        </button>
+       </div>
+        <div id="outputList">
+          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    padding: 10px;
+    background-color: aliceblue;
+    /* border: 1px solid red; */
+}
+.container{
+  background-color: rgb(158, 195, 195);
+    border: 5px solid black;
+    max-width: 800px;
+    min-height: 450px;
+    margin: auto;
+    padding: 25px;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 15px;
+    margin-top: 30px;
+    position: relative;
+
+}
+.container h1{
+  margin: 15px;
+}
+/* #inputData{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px
+} */
+/* #addBtn{
+    width: 100px;
+    float: inline-end;
+} */
+#outputList{
+  width: 100%;
+  margin-top: 15px;
+    /* border: 2px solid blue; */
+   
+    
+}
+.wrapper{
+    width: 90%;
+    position: relative;
+}
+.wrapper input{
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 100%;
+    padding: 1rem 2rem;
+   
+    
+   
+
+}
+.wrapper button{
+    border-radius: 50%;
+    height: 80%;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0;
+    transform: translateX(-10%);
+    top: 10%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.wrapper button:hover{
+   /* background-color: white; */
+   color: white;
+}
+
+
+.todoElement{
+  
+    width: 100%;
+    font-size: 30px;
+    /* border: 2px  solid black; */
+    border-bottom: 2px solid black;
+    padding: 10px;
+   position: relative;
+   padding: 1rem 2rem;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.todoElement:hover{
+  background-color: rgba(255, 255, 255, 0.346);
+  /* box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.301); */
+}
+.todoElement button{
+  cursor: pointer;
+  
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+
+}
+.btnSection{
+  /* border: 2px solid yellow; */
+  float: right;
+}
+
+/*  for light or dark mod */
+.header{
+  /* border: 2px solid red; */
+  width: 100%;
+  position: relative;
+ 
+
+}
+.time{
+  /* border: 2px solid green; */
+  justify-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: larger;
+  font-weight: bolder;
+  font-family: Cambria;
+
+  
+}
+.themMode{
+  justify-content: right;
+  justify-items: right;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #cebccf;
+ 
+  transition: background 0.2s linear;
+}
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1,body.dark li {color: #fff;}
+body.dark .container{
+  background-color: rgba(90, 120, 124, 0.726);
+  border: 5px solid white;
+}
+body.dark .time{
+  color: white;
+}
+body.dark .todoElement{
+  border-bottom: 2px solid white;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
